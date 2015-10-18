@@ -77,13 +77,15 @@ class SignInViewController: UIViewController {
                     }
             self.presentViewController(alertController, animated: true){}
             alertController.addAction(OKAction)
-            
+            self.activityIndicator.stopAnimating()
             }
         
         }
         if email.text == "mcoelho@walmart.com" && password.text == "password"
-        {self.activityIndicator.startAnimating()
-       // delay(2)
+        {
+            self.activityIndicator.startAnimating()
+            delay(2){
+            self.performSegueWithIdentifier("segueToTutorial", sender: nil)}
         
         }
         
