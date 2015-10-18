@@ -14,6 +14,9 @@
 		CA70B52A1BD05B3200E33316 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA70B5281BD05B3200E33316 /* LaunchScreen.storyboard */; };
 		CA70B5351BD05B3200E33316 /* CarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70B5341BD05B3200E33316 /* CarouselTests.swift */; };
 		CA70B5401BD05B3200E33316 /* CarouselUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70B53F1BD05B3200E33316 /* CarouselUITests.swift */; };
+		CA70B54E1BD05E7A00E33316 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70B54D1BD05E7900E33316 /* Common.swift */; settings = {ASSET_TAGS = (); }; };
+		CA70B5501BD060A600E33316 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70B54F1BD060A600E33316 /* IntroViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CA70B5521BD0677D00E33316 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70B5511BD0677D00E33316 /* SignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		CA70B53B1BD05B3200E33316 /* CarouselUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarouselUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA70B53F1BD05B3200E33316 /* CarouselUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselUITests.swift; sourceTree = "<group>"; };
 		CA70B5411BD05B3200E33316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA70B54D1BD05E7900E33316 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		CA70B54F1BD060A600E33316 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		CA70B5511BD0677D00E33316 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +106,10 @@
 				CA70B51F1BD05B3200E33316 /* AppDelegate.swift */,
 				CA70B5211BD05B3200E33316 /* ViewController.swift */,
 				CA70B5231BD05B3200E33316 /* Main.storyboard */,
+				CA70B5511BD0677D00E33316 /* SignInViewController.swift */,
+				CA70B54F1BD060A600E33316 /* IntroViewController.swift */,
 				CA70B5261BD05B3200E33316 /* Assets.xcassets */,
+				CA70B54D1BD05E7900E33316 /* Common.swift */,
 				CA70B5281BD05B3200E33316 /* LaunchScreen.storyboard */,
 				CA70B52B1BD05B3200E33316 /* Info.plist */,
 			);
@@ -259,7 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA70B5221BD05B3200E33316 /* ViewController.swift in Sources */,
+				CA70B54E1BD05E7A00E33316 /* Common.swift in Sources */,
 				CA70B5201BD05B3200E33316 /* AppDelegate.swift in Sources */,
+				CA70B5521BD0677D00E33316 /* SignInViewController.swift in Sources */,
+				CA70B5501BD060A600E33316 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +496,7 @@
 				CA70B5461BD05B3200E33316 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA70B5471BD05B3200E33316 /* Build configuration list for PBXNativeTarget "CarouselTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +505,7 @@
 				CA70B5491BD05B3200E33316 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA70B54A1BD05B3200E33316 /* Build configuration list for PBXNativeTarget "CarouselUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +514,7 @@
 				CA70B54C1BD05B3200E33316 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
