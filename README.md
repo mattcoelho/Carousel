@@ -17,4 +17,5 @@ Time spent: 10 hours
  * [x] Required: User can dismiss the settings screen.
  * [x] Required: User can log out
  
+
  ![Video Walkthrough](matt_carousel.gif)
