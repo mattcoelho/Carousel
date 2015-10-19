@@ -8,27 +8,37 @@
 
 import UIKit
 
-class TutorialViewController: UIViewController {
+class TutorialViewController: UIViewController, UIScrollViewDelegate {
 
     
     @IBOutlet weak var tutorial: UIScrollView!
     
     @IBOutlet weak var pageControl: UIPageControl!
     
+    @IBOutlet weak var button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         tutorial.contentSize = CGSize(width: 1280, height: 568)
         tutorial.delegate = self
-            
+        button.alpha = 0
+        
 
         // Do any additional setup after loading the view.
     }
+   
 
     
     func scrollViewDidEndDecelerating(tutorial: UIScrollView!) {
         // Get the current page based on the scroll offset
         let page : Int = Int(round(tutorial.contentOffset.x / 320))
-        
+         if page == 3 {
+            pageControl.hidden = true
+            button.alpha = 1
+        }
+         else {
+            pageControl.hidden = false
+            button.alpha = 0
+        }
         // Set the current page, so the dots will update
         pageControl.currentPage = page
     }

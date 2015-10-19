@@ -45,51 +45,52 @@ class SignInViewController: UIViewController {
             alertController.addAction(OKAction)
             // optional code for what happens after the alert controller has finished presenting
         }
-        
-        
-        if password.text!.isEmpty
+        else  {
+            if password.text!.isEmpty
         {
             let alertController = UIAlertController(title: "Password Required", message: "Please enter your Password", preferredStyle: .Alert)
             // create an OK action
             let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
                 // handle response here.
-            }
-            // add the OK action to the alert controller
-            
-            
+                }
             presentViewController(alertController, animated: true){}
             alertController.addAction(OKAction)
-            // optional code for what happens after the alert controller has finished presenting
-        }
-    
-        
-        
-        if email.text != "mcoelho@walmart.com" || password.text != "password"
             
-        {
-            
-            self.activityIndicator.startAnimating()
-            delay(2)
-                {let alertController = UIAlertController(title: "Invalid Email or Password", message: "Please enter a valid Email or Password", preferredStyle: .Alert)
-                    
-                    let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
-                        
-                    }
-            self.presentViewController(alertController, animated: true){}
-            alertController.addAction(OKAction)
-            self.activityIndicator.stopAnimating()
             }
         
+        else {
+                if email.text != "mcoelho@walmart.com" || password.text != "password"
+            {
+                self.activityIndicator.startAnimating()
+                delay(2)
+                    {let alertController = UIAlertController(title: "Invalid Email or Password", message: "Please enter a valid Email or Password", preferredStyle: .Alert)
+                        
+                        let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+                            
+                        }
+                        self.presentViewController(alertController, animated: true){}
+                        alertController.addAction(OKAction)
+                        self.activityIndicator.stopAnimating()
+                }
+            }
         }
+        
+        }
+    
+  
+        
+       
         if email.text == "mcoelho@walmart.com" && password.text == "password"
         {
             self.activityIndicator.startAnimating()
+    
             delay(2){
             self.performSegueWithIdentifier("segueToTutorial", sender: nil)}
         
         }
-        
     }
+ 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -124,3 +125,4 @@ class SignInViewController: UIViewController {
     
 
 }
+
